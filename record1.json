@@ -1,0 +1,214 @@
+{
+  "medasr": [
+    {
+      "speaker": "SPEAKER_00",
+      "text": "Guten Morgen, please come in and have a seat.",
+      "words": [
+        { "token": "Guten", "start": 12.4, "end": 12.58, "confidence": 0.92 },
+        { "token": "Morgen", "start": 12.62, "end": 12.98, "confidence": 0.88 },
+        { "token": "please", "start": 13.04, "end": 13.3, "confidence": 0.86 },
+        { "token": "come", "start": 13.34, "end": 13.52, "confidence": 0.91 },
+        { "token": "in", "start": 13.56, "end": 13.64, "confidence": 0.79 },
+        { "token": "and", "start": 13.68, "end": 13.74, "confidence": 0.83 },
+        { "token": "have", "start": 13.78, "end": 13.92, "confidence": 0.87 },
+        { "token": "a", "start": 13.96, "end": 13.98, "confidence": 0.72 },
+        { "token": "seat", "start": 14.02, "end": 14.82, "confidence": 0.94 }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "text": "Good morning doctor. I have been experiencing chest pain shortness of breath and palpitations for the last five days.",
+      "words": [
+        { "token": "Good", "start": 15.1, "end": 15.28, "confidence": 0.89 },
+        {
+          "token": "morning",
+          "start": 15.32,
+          "end": 15.72,
+          "confidence": 0.91
+        },
+        { "token": "doctor", "start": 15.78, "end": 16.1, "confidence": 0.86 },
+        { "token": "chest", "start": 16.2, "end": 16.5, "confidence": 0.97 },
+        { "token": "pain", "start": 16.55, "end": 16.8, "confidence": 0.98 },
+        {
+          "token": "shortness",
+          "start": 16.85,
+          "end": 17.1,
+          "confidence": 0.96
+        },
+        { "token": "of", "start": 17.15, "end": 17.2, "confidence": 0.98 },
+        { "token": "breath", "start": 17.25, "end": 17.6, "confidence": 0.96 },
+        {
+          "token": "palpitations",
+          "start": 17.65,
+          "end": 18.2,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "text": "Do you have hypertension diabetes mellitus hypothyroidism or heart failure?",
+      "words": [
+        { "token": "Do", "start": 19.0, "end": 19.1, "confidence": 0.91 },
+        { "token": "you", "start": 19.15, "end": 19.25, "confidence": 0.93 },
+        { "token": "have", "start": 19.3, "end": 19.45, "confidence": 0.9 },
+        {
+          "token": "hypertension",
+          "start": 19.5,
+          "end": 20.0,
+          "confidence": 0.97
+        },
+        {
+          "token": "diabetes",
+          "start": 20.05,
+          "end": 20.45,
+          "confidence": 0.98
+        },
+        { "token": "mellitus", "start": 20.5, "end": 20.9, "confidence": 0.96 },
+        {
+          "token": "hypothyroidism",
+          "start": 20.95,
+          "end": 21.6,
+          "confidence": 0.95
+        },
+        { "token": "heart", "start": 21.65, "end": 21.9, "confidence": 0.98 },
+        { "token": "failure", "start": 21.95, "end": 22.4, "confidence": 0.97 }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "text": "Je prends metformin mille milligrammes et amlodipine dix milligrammes chaque jour.",
+      "words": [
+        { "token": "Je", "start": 23.0, "end": 23.1, "confidence": 0.88 },
+        { "token": "prends", "start": 23.15, "end": 23.4, "confidence": 0.85 },
+        {
+          "token": "metformin",
+          "start": 23.45,
+          "end": 23.9,
+          "confidence": 0.97
+        },
+        { "token": "mille", "start": 23.95, "end": 24.15, "confidence": 0.86 },
+        {
+          "token": "milligrammes",
+          "start": 24.2,
+          "end": 24.7,
+          "confidence": 0.84
+        },
+        {
+          "token": "amlodipine",
+          "start": 24.75,
+          "end": 25.3,
+          "confidence": 0.97
+        },
+        { "token": "dix", "start": 25.35, "end": 25.5, "confidence": 0.87 },
+        {
+          "token": "milligrammes",
+          "start": 25.55,
+          "end": 26.0,
+          "confidence": 0.85
+        },
+        { "token": "chaque", "start": 26.05, "end": 26.25, "confidence": 0.84 },
+        { "token": "jour", "start": 26.3, "end": 26.6, "confidence": 0.86 }
+      ]
+    }
+  ],
+  "whisperx": [
+    {
+      "speaker": "SPEAKER_00",
+      "text": "Guten Morgen please come in and have a seat.",
+      "words": [
+        { "token": "Guten", "start": 12.4, "end": 12.58, "confidence": 0.9 },
+        { "token": "Morgen", "start": 12.62, "end": 12.98, "confidence": 0.85 },
+        { "token": "please", "start": 13.04, "end": 13.3, "confidence": 0.83 },
+        { "token": "come", "start": 13.34, "end": 13.52, "confidence": 0.89 },
+        { "token": "in", "start": 13.56, "end": 13.64, "confidence": 0.77 },
+        { "token": "and", "start": 13.68, "end": 13.74, "confidence": 0.81 },
+        { "token": "have", "start": 13.78, "end": 13.92, "confidence": 0.85 },
+        { "token": "a", "start": 13.96, "end": 13.98, "confidence": 0.7 },
+        { "token": "seat", "start": 14.02, "end": 14.82, "confidence": 0.92 }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "text": "Good morning doctor. I have been experiencing chest pane sortness of breath and palpitations for the last five days.",
+      "words": [
+        { "token": "Good", "start": 15.1, "end": 15.28, "confidence": 0.87 },
+        {
+          "token": "morning",
+          "start": 15.32,
+          "end": 15.72,
+          "confidence": 0.89
+        },
+        { "token": "doctor", "start": 15.78, "end": 16.1, "confidence": 0.84 },
+        { "token": "chest", "start": 16.2, "end": 16.5, "confidence": 0.85 },
+        { "token": "pane", "start": 16.55, "end": 16.8, "confidence": 0.62 },
+        {
+          "token": "sortness",
+          "start": 16.85,
+          "end": 17.1,
+          "confidence": 0.58
+        },
+        { "token": "of", "start": 17.15, "end": 17.2, "confidence": 0.96 },
+        { "token": "breath", "start": 17.25, "end": 17.6, "confidence": 0.94 },
+        {
+          "token": "palpitations",
+          "start": 17.65,
+          "end": 18.2,
+          "confidence": 0.91
+        }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "text": "do you have hyper tension diabetis melitus hypo thyroid ism or heart failure",
+      "words": [
+        { "token": "do", "start": 19.0, "end": 19.1, "confidence": 0.89 },
+        { "token": "you", "start": 19.15, "end": 19.25, "confidence": 0.91 },
+        { "token": "have", "start": 19.3, "end": 19.45, "confidence": 0.88 },
+        { "token": "hyper", "start": 19.5, "end": 19.7, "confidence": 0.65 },
+        { "token": "tension", "start": 19.75, "end": 20.0, "confidence": 0.66 },
+        {
+          "token": "diabetis",
+          "start": 20.05,
+          "end": 20.45,
+          "confidence": 0.61
+        },
+        { "token": "melitus", "start": 20.5, "end": 20.9, "confidence": 0.6 },
+        { "token": "hypo", "start": 20.95, "end": 21.15, "confidence": 0.63 },
+        { "token": "thyroid", "start": 21.2, "end": 21.5, "confidence": 0.65 },
+        { "token": "ism", "start": 21.55, "end": 21.75, "confidence": 0.62 },
+        { "token": "heart", "start": 21.8, "end": 22.0, "confidence": 0.96 },
+        { "token": "failure", "start": 22.05, "end": 22.4, "confidence": 0.95 }
+      ]
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "text": "Je prends meta forming mille milligrammes et am low dipine dix milligrammes chaque jour.",
+      "words": [
+        { "token": "Je", "start": 23.0, "end": 23.1, "confidence": 0.86 },
+        { "token": "prends", "start": 23.15, "end": 23.4, "confidence": 0.83 },
+        { "token": "meta", "start": 23.45, "end": 23.65, "confidence": 0.62 },
+        { "token": "forming", "start": 23.7, "end": 23.95, "confidence": 0.61 },
+        { "token": "mille", "start": 24.0, "end": 24.2, "confidence": 0.84 },
+        {
+          "token": "milligrammes",
+          "start": 24.25,
+          "end": 24.7,
+          "confidence": 0.82
+        },
+        { "token": "am", "start": 24.75, "end": 24.85, "confidence": 0.63 },
+        { "token": "low", "start": 24.9, "end": 25.05, "confidence": 0.64 },
+        { "token": "dipine", "start": 25.1, "end": 25.4, "confidence": 0.62 },
+        { "token": "dix", "start": 25.45, "end": 25.6, "confidence": 0.85 },
+        {
+          "token": "milligrammes",
+          "start": 25.65,
+          "end": 26.1,
+          "confidence": 0.83
+        },
+        { "token": "chaque", "start": 26.15, "end": 26.35, "confidence": 0.82 },
+        { "token": "jour", "start": 26.4, "end": 26.7, "confidence": 0.84 }
+      ]
+    }
+  ]
+}

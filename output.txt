@@ -1,0 +1,424 @@
+================================================================================
+MEDICAL TRANSCRIPT CONFLICT RESOLUTION PIPELINE
+================================================================================
+
+================================================================================
+TIMESTAMP MATCHER
+================================================================================
+
+good                     good                     
+morning                  morning                  
+please                   please                   
+come                     come                     
+in                       in                       
+and                      and                      
+have                     have                     
+a                        a                        
+seat                     seat                     
+good                     good                     
+morning                  morning                  
+doctor                   doctor                   
+chest                    chest                    
+pane                     pain                     
+sortness                 shortness                
+of                       of                       
+breath                   breath                   
+palpitations             palpitations             
+do                       do                       
+you                      you                      
+
+Candidate Pairs : 43
+
+================================================================================
+
+================================================================================
+MEDGEMMA INPUT
+================================================================================
+[
+  {
+    "speaker": "SPEAKER_00",
+    "start": 12.4,
+    "end": 12.58,
+    "whisper": "good",
+    "medasr": "good"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 12.62,
+    "end": 12.98,
+    "whisper": "morning",
+    "medasr": "morning"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.04,
+    "end": 13.3,
+    "whisper": "please",
+    "medasr": "please"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.34,
+    "end": 13.52,
+    "whisper": "come",
+    "medasr": "come"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.56,
+    "end": 13.64,
+    "whisper": "in",
+    "medasr": "in"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.68,
+    "end": 13.74,
+    "whisper": "and",
+    "medasr": "and"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.78,
+    "end": 13.92,
+    "whisper": "have",
+    "medasr": "have"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 13.96,
+    "end": 13.98,
+    "whisper": "a",
+    "medasr": "a"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 14.02,
+    "end": 14.82,
+    "whisper": "seat",
+    "medasr": "seat"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 15.1,
+    "end": 15.28,
+    "whisper": "good",
+    "medasr": "good"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 15.32,
+    "end": 15.72,
+    "whisper": "morning",
+    "medasr": "morning"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 15.78,
+    "end": 16.1,
+    "whisper": "doctor",
+    "medasr": "doctor"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 16.2,
+    "end": 16.5,
+    "whisper": "chest",
+    "medasr": "chest"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 16.55,
+    "end": 16.8,
+    "whisper": "pane",
+    "medasr": "pain"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 16.85,
+    "end": 17.1,
+    "whisper": "sortness",
+    "medasr": "shortness"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 17.15,
+    "end": 17.2,
+    "whisper": "of",
+    "medasr": "of"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 17.25,
+    "end": 17.6,
+    "whisper": "breath",
+    "medasr": "breath"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 17.65,
+    "end": 18.2,
+    "whisper": "palpitations",
+    "medasr": "palpitations"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 19.0,
+    "end": 19.1,
+    "whisper": "do",
+    "medasr": "do"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 19.15,
+    "end": 19.25,
+    "whisper": "you",
+    "medasr": "you"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 19.3,
+    "end": 19.45,
+    "whisper": "have",
+    "medasr": "have"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 19.5,
+    "end": 20.0,
+    "whisper": "hyper",
+    "medasr": "hypertension"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 20.05,
+    "end": 20.45,
+    "whisper": "tension",
+    "medasr": "diabetes"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 20.5,
+    "end": 20.9,
+    "whisper": "diabetis",
+    "medasr": "mellitus"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 20.95,
+    "end": 21.6,
+    "whisper": "melitus",
+    "medasr": "hypothyroidism"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 20.95,
+    "end": 21.15,
+    "whisper": "hypo",
+    "medasr": null
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 21.65,
+    "end": 21.9,
+    "whisper": "thyroid",
+    "medasr": "heart"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 21.95,
+    "end": 22.4,
+    "whisper": "ism",
+    "medasr": "failure"
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 21.8,
+    "end": 22.0,
+    "whisper": "heart",
+    "medasr": null
+  },
+  {
+    "speaker": "SPEAKER_00",
+    "start": 22.05,
+    "end": 22.4,
+    "whisper": "failure",
+    "medasr": null
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 23.0,
+    "end": 23.1,
+    "whisper": "je",
+    "medasr": "i"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 23.15,
+    "end": 23.4,
+    "whisper": "prends",
+    "medasr": "take"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 23.45,
+    "end": 23.9,
+    "whisper": "meta",
+    "medasr": "metformin"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 23.95,
+    "end": 24.15,
+    "whisper": "forming",
+    "medasr": "thousand"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 24.2,
+    "end": 24.7,
+    "whisper": "thousand",
+    "medasr": "milligrams"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 24.75,
+    "end": 25.3,
+    "whisper": "milligrams",
+    "medasr": "amlodipine"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 24.75,
+    "end": 24.85,
+    "whisper": "am",
+    "medasr": null
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 25.35,
+    "end": 25.5,
+    "whisper": "low",
+    "medasr": "ten"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 25.55,
+    "end": 26.0,
+    "whisper": "dipine",
+    "medasr": "milligrams"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 25.45,
+    "end": 25.6,
+    "whisper": "ten",
+    "medasr": null
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 26.05,
+    "end": 26.25,
+    "whisper": "milligrams",
+    "medasr": "every"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 26.3,
+    "end": 26.6,
+    "whisper": "every",
+    "medasr": "day"
+  },
+  {
+    "speaker": "SPEAKER_01",
+    "start": 26.4,
+    "end": 26.7,
+    "whisper": "day",
+    "medasr": null
+  }
+]
+
+================================================================================
+MEDGEMMA OUTPUT
+================================================================================
+```json
+{
+  "transcript": [
+    {
+      "speaker": "SPEAKER_00",
+      "start": 12.4,
+      "end": 12.98,
+      "duration": 0.58,
+      "text": "Good morning, please"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 13.34,
+      "end": 13.64,
+      "duration": 0.3,
+      "text": "come in and have a seat."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 15.1,
+      "end": 15.72,
+      "duration": 0.62,
+      "text": "Good morning, Doctor."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 16.2,
+      "end": 18.2,
+      "duration": 2.0,
+      "text": "I have chest pain, shortness of breath, palpitations."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 19.0,
+      "end": 20.45,
+      "duration": 1.45,
+      "text": "Do you have hypertension? Diabetes mellitus?"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 20.95,
+      "end": 22.4,
+      "duration": 1.45,
+      "text": "Hypothyroidism? Heart failure?"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 23.0,
+      "end": 26.7,
+      "duration": 3.7,
+      "text": "I take metformin thousand milligrams amlodipine ten milligrams every day."
+    }
+  ],
+  "summary": [
+    {
+      "speaker": "SPEAKER_01",
+      "start": 16.2,
+      "end": 18.2,
+      "duration": 2.0,
+      "category": "Chief Complaint",
+      "summarized_text": "Chest pain, shortness of breath, palpitations."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 19.0,
+      "end": 22.4,
+      "duration": 3.4,
+      "category": "Past Medical History",
+      "summarized_text": "Asks about hypertension, diabetes mellitus, hypothyroidism, heart failure."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 23.0,
+      "end": 26.7,
+      "duration": 3.7,
+      "category": "Medications",
+      "summarized_text": "Takes metformin thousand milligrams, amlodipine ten milligrams every day."
+    }
+  ]
+}
+```
